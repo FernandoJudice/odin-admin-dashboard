@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #1992d4;
+    --secondary-color: white;
+    --terciary-color: #e2e8f0;
+    --font-size: 16px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 8fr;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: var(--secondary-color);
+    grid-column: 2/3;
+}
+
+.sidebar {
+    background-color: var(--primary-color);
+    grid-row: 1/ -1;
+}
+
+.content {
+    background-color: var(--terciary-color);
+    grid-column: 2/ -1;
+    grid-row: 2/ -1;
+}
