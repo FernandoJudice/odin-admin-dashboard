@@ -198,3 +198,27 @@ body {
 .card, .tr-card, .an-card {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
+
+.an-card {
+    display: grid;
+    background-color: var(--secondary-color);
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 24px;
+}
+
+.an-slot {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    border-bottom: 1px solid var(--terciary-color); */
+}
+
+.an-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.an-text {
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+}
