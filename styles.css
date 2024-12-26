@@ -6,6 +6,7 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 2fr 8fr;
@@ -20,10 +21,46 @@ body {
 .sidebar {
     background-color: var(--primary-color);
     grid-row: 1/ -1;
+    display: grid;
+    grid-template-rows: 64px repeat(11,32px);
+    gap: 16px
 }
 
 .content {
     background-color: var(--terciary-color);
     grid-column: 2/ -1;
     grid-row: 2/ -1;
+}
+
+
+.sb-content, .sb-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 32px;
+}
+
+.sb-title {
+    padding: 48px 32px;
+}
+
+.sb-title-div {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 900;
+    margin: 8px;
+}
+
+.sb-content img, .sb-div {
+    color: var(--secondary-color);
+    margin: 8px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    fill: var(--secondary-color);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 3fr;
 }
