@@ -63,12 +63,13 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 3fr;
+    padding-left: 48px;
 }
 
 .search, .notification, .nav {
     display: flex;
     align-items: center;
-    padding: 32px;
+    padding: 16px;
 }
 
 .search-bar {
@@ -99,8 +100,28 @@ body {
 .nav-bt {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    /* font-weight: bold; */
-    /* font-size: 1.2rem; */
     padding: 16px 32px;
     border-radius: 9999px;
+}
+
+.greetings {
+    display: grid;
+    grid-template-columns: 112px 1fr;
+    /* grid-template-rows: 1fr 3fr; */
+    align-items: center;
+    justify-content: center;
+}
+
+.greetings img {
+    grid-row: 1/ -1;
+    padding: 12px;
+}
+
+.gt-msg {
+    font-weight: bold;
+}
+
+.gt-username {
+    font-size: 2rem;
+    font-weight: bold;
 }
