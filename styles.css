@@ -64,3 +64,17 @@ body {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 3fr;
 }
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 32px;
+}
+
+.search-bar {
+    margin: 0px 64px 0px 16px;
+    min-height: 2rem;
+    background-color: var(--terciary-color);
+    flex-grow: 1;
+    border-radius: 16px;
+}
