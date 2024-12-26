@@ -209,7 +209,7 @@ body {
 .an-slot {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    border-bottom: 1px solid var(--terciary-color); */
+    border-bottom: 1px solid var(--terciary-color);
 }
 
 .an-title {
@@ -220,5 +220,29 @@ body {
 
 .an-text {
     font-size: 0.8rem;
+    color: var(--secondary-text);
+}
+
+.tr-card {
+    display: grid;
+    gap: 16px;
+}
+
+.tr-slot {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.tr-card {
+    padding: 24px;
+}
+
+.tr-usr {
+    font-weight: bold;
+}
+
+.tr-msg {
     color: var(--secondary-text);
 }
