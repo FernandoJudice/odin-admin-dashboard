@@ -65,7 +65,7 @@ body {
     grid-template-rows: 2fr 3fr;
 }
 
-.search {
+.search, .notification, .nav {
     display: flex;
     align-items: center;
     padding: 32px;
@@ -77,4 +77,21 @@ body {
     background-color: var(--terciary-color);
     flex-grow: 1;
     border-radius: 16px;
+}
+
+.notification {
+    justify-content: center;
+}
+
+.notification img {
+    margin: 0px 16px;
+}
+
+.nt-username {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav {
+    justify-content: space-evenly;
 }
